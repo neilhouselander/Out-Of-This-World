@@ -25,10 +25,9 @@
 		C17C6F931A90A0820032E6AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C17C6F911A90A0820032E6AC /* LaunchScreen.xib */; };
 		C17C6F9F1A90A0820032E6AC /* Out_of_this_WorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C17C6F9E1A90A0820032E6AC /* Out_of_this_WorldTests.m */; };
 		C17C6FAA1A90A1590032E6AC /* NHOuterSpaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C17C6FA91A90A1590032E6AC /* NHOuterSpaceTableViewController.m */; };
-		C17C6FAD1A910A380032E6AC /* NHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C17C6FAC1A910A380032E6AC /* NHPerson.m */; };
-		C17C6FB11A910A780032E6AC /* NHFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C17C6FB01A910A780032E6AC /* NHFactory.m */; };
 		C17C6FB41A9279730032E6AC /* AstronomicalData.m in Sources */ = {isa = PBXBuildFile; fileRef = C17C6FB31A9279730032E6AC /* AstronomicalData.m */; };
 		C17C6FB71A927A580032E6AC /* NHPeoplDictionaries.m in Sources */ = {isa = PBXBuildFile; fileRef = C17C6FB61A927A580032E6AC /* NHPeoplDictionaries.m */; };
+		C1F414051A9670B00061AB8D /* NHPeopleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F414041A9670B00061AB8D /* NHPeopleObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,14 +66,12 @@
 		C17C6F9E1A90A0820032E6AC /* Out_of_this_WorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Out_of_this_WorldTests.m; sourceTree = "<group>"; };
 		C17C6FA81A90A1590032E6AC /* NHOuterSpaceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NHOuterSpaceTableViewController.h; path = ../NHOuterSpaceTableViewController.h; sourceTree = "<group>"; };
 		C17C6FA91A90A1590032E6AC /* NHOuterSpaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NHOuterSpaceTableViewController.m; path = ../NHOuterSpaceTableViewController.m; sourceTree = "<group>"; };
-		C17C6FAB1A910A380032E6AC /* NHPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPerson.h; sourceTree = "<group>"; };
-		C17C6FAC1A910A380032E6AC /* NHPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPerson.m; sourceTree = "<group>"; };
-		C17C6FAF1A910A780032E6AC /* NHFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFactory.h; sourceTree = "<group>"; };
-		C17C6FB01A910A780032E6AC /* NHFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFactory.m; sourceTree = "<group>"; };
 		C17C6FB21A9279730032E6AC /* AstronomicalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstronomicalData.h; sourceTree = "<group>"; };
 		C17C6FB31A9279730032E6AC /* AstronomicalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstronomicalData.m; sourceTree = "<group>"; };
 		C17C6FB51A927A580032E6AC /* NHPeoplDictionaries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPeoplDictionaries.h; sourceTree = "<group>"; };
 		C17C6FB61A927A580032E6AC /* NHPeoplDictionaries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPeoplDictionaries.m; sourceTree = "<group>"; };
+		C1F414031A9670B00061AB8D /* NHPeopleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPeopleObject.h; sourceTree = "<group>"; };
+		C1F414041A9670B00061AB8D /* NHPeopleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPeopleObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +137,8 @@
 				C17C6FA91A90A1590032E6AC /* NHOuterSpaceTableViewController.m */,
 				C1595AED1A93CD110003F6CD /* NHSpaceObject.h */,
 				C1595AEE1A93CD110003F6CD /* NHSpaceObject.m */,
+				C1F414031A9670B00061AB8D /* NHPeopleObject.h */,
+				C1F414041A9670B00061AB8D /* NHPeopleObject.m */,
 				C17C6FAE1A910A410032E6AC /* Model */,
 				C17C6F8F1A90A0820032E6AC /* Images.xcassets */,
 				C17C6F911A90A0820032E6AC /* LaunchScreen.xib */,
@@ -154,6 +153,8 @@
 				C1595AEC1A93CC700003F6CD /* planet pictures */,
 				C17C6FB21A9279730032E6AC /* AstronomicalData.h */,
 				C17C6FB31A9279730032E6AC /* AstronomicalData.m */,
+				C17C6FB51A927A580032E6AC /* NHPeoplDictionaries.h */,
+				C17C6FB61A927A580032E6AC /* NHPeoplDictionaries.m */,
 				C17C6F831A90A0820032E6AC /* Info.plist */,
 				C17C6F841A90A0820032E6AC /* main.m */,
 			);
@@ -180,12 +181,6 @@
 		C17C6FAE1A910A410032E6AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C17C6FAB1A910A380032E6AC /* NHPerson.h */,
-				C17C6FAC1A910A380032E6AC /* NHPerson.m */,
-				C17C6FAF1A910A780032E6AC /* NHFactory.h */,
-				C17C6FB01A910A780032E6AC /* NHFactory.m */,
-				C17C6FB51A927A580032E6AC /* NHPeoplDictionaries.h */,
-				C17C6FB61A927A580032E6AC /* NHPeoplDictionaries.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -302,12 +297,11 @@
 			files = (
 				C17C6FB71A927A580032E6AC /* NHPeoplDictionaries.m in Sources */,
 				C17C6FAA1A90A1590032E6AC /* NHOuterSpaceTableViewController.m in Sources */,
-				C17C6FB11A910A780032E6AC /* NHFactory.m in Sources */,
 				C1595AEF1A93CD110003F6CD /* NHSpaceObject.m in Sources */,
 				C17C6F881A90A0820032E6AC /* AppDelegate.m in Sources */,
-				C17C6FAD1A910A380032E6AC /* NHPerson.m in Sources */,
 				C17C6F851A90A0820032E6AC /* main.m in Sources */,
 				C17C6FB41A9279730032E6AC /* AstronomicalData.m in Sources */,
+				C1F414051A9670B00061AB8D /* NHPeopleObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

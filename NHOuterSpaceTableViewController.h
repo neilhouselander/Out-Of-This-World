@@ -11,7 +11,7 @@
 
 @interface NHOuterSpaceTableViewController : UITableViewController
 
-@property (strong, nonatomic) NSArray *thePeople;
+@property (strong, nonatomic) NSMutableArray *thePeople;
 @property (strong, nonatomic) NSMutableArray *planets;
 @property (strong, nonatomic) NSArray *dictionaryArray;
 

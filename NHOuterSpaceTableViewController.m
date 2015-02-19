@@ -7,11 +7,10 @@
 //
 
 #import "NHOuterSpaceTableViewController.h"
-#import "NHFactory.h"
-#import "NHPerson.h"
 #import "NHPeoplDictionaries.h"
 #import "AstronomicalData.h"
 #import "NHSpaceObject.h"
+#import "NHPeopleObject.h"
 
 @interface NHOuterSpaceTableViewController ()
 
@@ -22,9 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NHFactory *factoryMaker = [[NHFactory alloc]init];
-    self.thePeople = [factoryMaker makePerson];
-    
+
+   
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -84,8 +82,10 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+
     
-    NHSpaceObject *planet = self.planets [indexPath.row];
+    
+    NHSpaceObject *planet = self.planets [indexPath.row];//short hand for [self.planets objectAtIndex indexPath.row]
     
     cell.textLabel.text = planet.name;
     cell.detailTextLabel.text = planet.nickName;
