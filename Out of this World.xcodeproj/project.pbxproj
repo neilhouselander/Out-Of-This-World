@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C11FF34C1A9E5CE800DEB942 /* NHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11FF34B1A9E5CE800DEB942 /* NHDetailViewController.m */; };
 		C1595AE21A93CC670003F6CD /* Earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1595AD81A93CC670003F6CD /* Earth.jpg */; };
 		C1595AE31A93CC670003F6CD /* EinsteinRing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1595AD91A93CC670003F6CD /* EinsteinRing.jpg */; };
 		C1595AE41A93CC670003F6CD /* Jupiter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1595ADA1A93CC670003F6CD /* Jupiter.jpg */; };
@@ -18,6 +19,7 @@
 		C1595AEA1A93CC670003F6CD /* Uranus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1595AE01A93CC670003F6CD /* Uranus.jpg */; };
 		C1595AEB1A93CC670003F6CD /* Venus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1595AE11A93CC670003F6CD /* Venus.jpg */; };
 		C1595AEF1A93CD110003F6CD /* NHSpaceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1595AEE1A93CD110003F6CD /* NHSpaceObject.m */; };
+		C1758C131A97D6B7000E2D33 /* NHOuterSpaceImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1758C121A97D6B7000E2D33 /* NHOuterSpaceImageView.m */; };
 		C17C6F851A90A0820032E6AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C17C6F841A90A0820032E6AC /* main.m */; };
 		C17C6F881A90A0820032E6AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C17C6F871A90A0820032E6AC /* AppDelegate.m */; };
 		C17C6F8E1A90A0820032E6AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17C6F8C1A90A0820032E6AC /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C11FF34A1A9E5CE800DEB942 /* NHDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDetailViewController.h; sourceTree = "<group>"; };
+		C11FF34B1A9E5CE800DEB942 /* NHDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDetailViewController.m; sourceTree = "<group>"; };
 		C1595AD81A93CC670003F6CD /* Earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth.jpg; sourceTree = "<group>"; };
 		C1595AD91A93CC670003F6CD /* EinsteinRing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EinsteinRing.jpg; sourceTree = "<group>"; };
 		C1595ADA1A93CC670003F6CD /* Jupiter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jupiter.jpg; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		C1595AE11A93CC670003F6CD /* Venus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Venus.jpg; sourceTree = "<group>"; };
 		C1595AED1A93CD110003F6CD /* NHSpaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHSpaceObject.h; sourceTree = "<group>"; };
 		C1595AEE1A93CD110003F6CD /* NHSpaceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHSpaceObject.m; sourceTree = "<group>"; };
+		C1758C111A97D6B7000E2D33 /* NHOuterSpaceImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NHOuterSpaceImageView.h; path = ../NHOuterSpaceImageView.h; sourceTree = "<group>"; };
+		C1758C121A97D6B7000E2D33 /* NHOuterSpaceImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NHOuterSpaceImageView.m; path = ../NHOuterSpaceImageView.m; sourceTree = "<group>"; };
 		C17C6F7F1A90A0820032E6AC /* Out of this World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Out of this World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17C6F831A90A0820032E6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C17C6F841A90A0820032E6AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -130,15 +136,10 @@
 		C17C6F811A90A0820032E6AC /* Out of this World */ = {
 			isa = PBXGroup;
 			children = (
+				C17C6F8C1A90A0820032E6AC /* Main.storyboard */,
 				C17C6F861A90A0820032E6AC /* AppDelegate.h */,
 				C17C6F871A90A0820032E6AC /* AppDelegate.m */,
-				C17C6F8C1A90A0820032E6AC /* Main.storyboard */,
-				C17C6FA81A90A1590032E6AC /* NHOuterSpaceTableViewController.h */,
-				C17C6FA91A90A1590032E6AC /* NHOuterSpaceTableViewController.m */,
-				C1595AED1A93CD110003F6CD /* NHSpaceObject.h */,
-				C1595AEE1A93CD110003F6CD /* NHSpaceObject.m */,
-				C1F414031A9670B00061AB8D /* NHPeopleObject.h */,
-				C1F414041A9670B00061AB8D /* NHPeopleObject.m */,
+				C1DD335F1A9A40ED0073067A /* Views */,
 				C17C6FAE1A910A410032E6AC /* Model */,
 				C17C6F8F1A90A0820032E6AC /* Images.xcassets */,
 				C17C6F911A90A0820032E6AC /* LaunchScreen.xib */,
@@ -181,8 +182,25 @@
 		C17C6FAE1A910A410032E6AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C1595AED1A93CD110003F6CD /* NHSpaceObject.h */,
+				C1595AEE1A93CD110003F6CD /* NHSpaceObject.m */,
+				C1F414031A9670B00061AB8D /* NHPeopleObject.h */,
+				C1F414041A9670B00061AB8D /* NHPeopleObject.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		C1DD335F1A9A40ED0073067A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C17C6FA81A90A1590032E6AC /* NHOuterSpaceTableViewController.h */,
+				C17C6FA91A90A1590032E6AC /* NHOuterSpaceTableViewController.m */,
+				C1758C111A97D6B7000E2D33 /* NHOuterSpaceImageView.h */,
+				C1758C121A97D6B7000E2D33 /* NHOuterSpaceImageView.m */,
+				C11FF34A1A9E5CE800DEB942 /* NHDetailViewController.h */,
+				C11FF34B1A9E5CE800DEB942 /* NHDetailViewController.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17C6FB71A927A580032E6AC /* NHPeoplDictionaries.m in Sources */,
+				C11FF34C1A9E5CE800DEB942 /* NHDetailViewController.m in Sources */,
+				C1758C131A97D6B7000E2D33 /* NHOuterSpaceImageView.m in Sources */,
 				C17C6FAA1A90A1590032E6AC /* NHOuterSpaceTableViewController.m in Sources */,
 				C1595AEF1A93CD110003F6CD /* NHSpaceObject.m in Sources */,
 				C17C6F881A90A0820032E6AC /* AppDelegate.m in Sources */,

@@ -11,6 +11,8 @@
 #import "AstronomicalData.h"
 #import "NHSpaceObject.h"
 #import "NHPeopleObject.h"
+#import "NHOuterSpaceImageView.h"
+#import "NHDetailViewController.h"
 
 @interface NHOuterSpaceTableViewController ()
 
@@ -22,7 +24,7 @@
     [super viewDidLoad];
     
 
-   
+    self.navigationController.navigationBar.barTintColor = [UIColor yellowColor];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -50,8 +52,39 @@
         //rinse & repeat with next dictionary
      }
  
- 
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender //called just as segue about to occur
+{
+    //ENGLISH
+    //if a table view cell was touched
+    //and the next class is an NHOuterSpaceImageView class
+    //create new object of NHOuterSpaceImageView class (got properties scrollview, imageview AND space object) & set to destination viewcontroller
+    //create new index path object called path, and set to whichever cell was touched (sender)
+    //new space object and set to the item in the array of planets that was touched using the index path.row..so row = 1 finds object 1 in the array
+    //use the outerspaceimageview object set the property, spaceobject to the elsected space objec tin previous step
+    //could we re-factor this to nextViewController.spaceobject = [self.planets objectAtIndex:path.row]
     
+    if ([sender isKindOfClass:[UITableViewCell class]])
+    {
+        if ([segue.destinationViewController isKindOfClass:[NHOuterSpaceImageView class]])
+        {
+            NHOuterSpaceImageView *nextViewController = segue.destinationViewController;
+            NSIndexPath *path = [self.tableView indexPathForCell:sender];
+            NHSpaceObject *selectedObject = [self.planets objectAtIndex:path.row];
+            nextViewController.spaceObject = selectedObject;
+        }
+    }
+    if ([sender isKindOfClass:[NSIndexPath class]])
+    {
+        if ([segue.destinationViewController isKindOfClass:[NHDetailViewController class]])
+        {
+            NHDetailViewController *targetViewController = segue.destinationViewController;
+            NSIndexPath *path = sender;
+            NHSpaceObject *selectedObject = [self.planets objectAtIndex:path.row];
+            targetViewController.spaceObject = selectedObject;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -82,8 +115,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-
-    
     
     NHSpaceObject *planet = self.planets [indexPath.row];//short hand for [self.planets objectAtIndex indexPath.row]
     
@@ -100,6 +131,12 @@
     return cell;
 }
 
+#pragma mark Table View Data Delegate
+
+-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"push to space data" sender:indexPath];
+}
 
 /*
 // Override to support conditional editing of the table view.

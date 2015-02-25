@@ -26,7 +26,7 @@
     self.peopleString = [nameData objectForKey:PERSON_NAME];
     self.nickNameString = [nameData objectForKey:PERSON_NICKNAME];
     self.age = [[nameData objectForKey:PERSON_AGE]intValue];
-    
+
     return self;
 }
 

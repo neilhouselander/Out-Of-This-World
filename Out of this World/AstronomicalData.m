@@ -15,7 +15,15 @@
 {
     NSMutableArray *planetInformation = [@[] mutableCopy];
     
-    NSDictionary *mercuryDictionary = @{PLANET_NAME : @"Mercury", PLANET_GRAVITY : @3.7, PLANET_DIAMETER : @4879, PLANET_YEAR_LENGTH : @88.0, PLANET_DAY_LENGTH : @4222.6, PLANET_TEMPERATURE : @167, PLANET_NUMBER_OF_MOONS : @0, PLANET_NICKNAME : @"Hermes", PLANET_INTERESTING_FACT : @"Mercury is only about one-third the size of the Earth"};
+    NSDictionary *mercuryDictionary = @{PLANET_NAME             : @"Mercury",
+                                        PLANET_GRAVITY          : @3.7,
+                                        PLANET_DIAMETER         : @4879,
+                                        PLANET_YEAR_LENGTH      : @88.0,
+                                        PLANET_DAY_LENGTH       : @4222.6,
+                                        PLANET_TEMPERATURE      : @167,
+                                        PLANET_NUMBER_OF_MOONS  : @0,
+                                        PLANET_NICKNAME         : @"Hermes",
+                                        PLANET_INTERESTING_FACT : @"Mercury is only about one-third the size of the Earth"};
     [planetInformation addObject:mercuryDictionary];
     
     NSDictionary *venusDictionary = @{PLANET_NAME : @"Venus", PLANET_GRAVITY : @8.9, PLANET_DIAMETER : @12104, PLANET_YEAR_LENGTH : @224.7, PLANET_DAY_LENGTH : @2802.0, PLANET_TEMPERATURE : @464, PLANET_NUMBER_OF_MOONS : @0, PLANET_NICKNAME : @"Aphrodite", PLANET_INTERESTING_FACT : @"Venus is the hottest planet in the solar system"};
